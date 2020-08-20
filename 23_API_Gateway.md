@@ -64,3 +64,8 @@ Cross-origin resource sharing is a mechanism that allows restricted resources (e
 - You can log results to CloudWatch.
 - If you are using Javascript that uses multiple domains with API Gateway, you need CORS on API Gateway.
 - CORS is enforced by the client.
+
+#### Advanced tips
+- You can import APIs, currently this supports Swagger v2.0 definition files.
+- API throttling: By default, API gateway limits the steady state request rate to 10,0000 rps. The max concurrent requests is 5000 per account. If you go over this limit, you will receive a 429 Too Many Request error.
+- SOAP Webservice Passthrough configuration is possible.
